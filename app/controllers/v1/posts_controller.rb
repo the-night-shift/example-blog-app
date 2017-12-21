@@ -10,6 +10,7 @@ class V1::PostsController < ApplicationController
     post = Post.new(
       title: params[:title],
       body: params[:body],
+      image: "https://picsum.photos/200/300/?random",
       user_id: current_user.id
     )
     if post.save
