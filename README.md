@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple blog app backend with authentication and a Post model with RESTful API routes.
 
-Things you may want to cover:
+Use the following commands to set up the app:
 
-* Ruby version
+```
+git clone https://github.com/acltc/example-blog-app.git
+cd example-blog-app
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+rails server
+```
 
-* System dependencies
+To test the app with the given Ruby script, run:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+ruby frontend.rb
+```
